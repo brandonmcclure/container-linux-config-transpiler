@@ -53,3 +53,6 @@ bin/ct-%-x86_64-pc-windows-gnu.exe: GOARGS = GOOS=windows GOARCH=amd64
 
 bin/%: $(GO_SOURCES)
 	$(Q)$(GOARGS) go build -mod vendor -o $@ -ldflags $(LD_FLAGS) $(REPO)/internal
+
+build-docker:
+	$(Q)./docker-build.ps1
