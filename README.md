@@ -92,7 +92,7 @@ Note: Review releases for new branch versions.
 ```
 git clone https://github.com/flatcar-linux/container-linux-config-transpiler
 cd container-linux-config-transpiler
-docker run --rm -i -t -v $PWD:/v -w /v golang:1.14 make
+docker run --rm -i -t -v ${PWD}:/v -w /v golang:1.14 make
 ```
 ## Related projects
 
